@@ -35,6 +35,13 @@ const HomeScreen = () => {
         onPress={ledToggle}
         color={stateLED.value ? "red": "green"}/>
       </View>
+      <View style={{marginBottom:20}}>
+        <Button
+        title="Listar Eventos"
+        onPress={()=> navigation.navigate("listEvents")}
+        />
+
+      </View>
     </View>
     
   );

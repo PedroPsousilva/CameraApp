@@ -1,7 +1,7 @@
 import axios  from "axios";
 
 const api = axios.create({
-    baseURL: "http://10.89.240.85:5000/api/v1",
+    baseURL: "http://10.89.240.88:5000/api/v1",
 
     headers:{
         accept: "application/json",
@@ -35,3 +35,6 @@ export const createEvento = async (form,imageUri) => {
     })
 
 }
+export const getEventos = async () => {
+    return api.get("/evento"); // já retorna todos os eventos
+  };
